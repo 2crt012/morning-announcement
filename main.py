@@ -6,5 +6,7 @@ import datetime
 tts = pyttsx3.init()
 
 #code
-tts.say("Good Morning!")
+cur_date = str(datetime.date.today())
+cur_date = cur_date.replace("#", "")
+tts.say("Good Morning! Today is " + cur_date)
 tts.runAndWait()
