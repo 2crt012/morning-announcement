@@ -6,5 +6,5 @@ import datetime
 tts = pyttsx3.init()
 
 #code
-tts.say("hello 1 2 3 test test")
+tts.say("Good Morning!")
 tts.runAndWait()
