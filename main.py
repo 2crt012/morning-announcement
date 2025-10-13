@@ -6,13 +6,11 @@ import random
 # set up TTS
 tts = pyttsx3.init()
 
-def sayGM(phrase): # say good morning with the TTS engine
+def sayGM(phrase):
+    phrases = ["Good Morning, have a nice day!", "Rise and shine, it's a new day!"]
     if phrase == 0:
-        phrase = random.randint(1, 2)
-    if phrase == 1:
-        tts.say("Good Morning, havea  nice day!")
-    elif phrase == 2:
-        tts.say("Rise and shine, it's a new day!")
+        phrase = random.choice(phrases)
+    tts.say(phrase)
     tts.runAndWait()
 
 def sayDate(): # get the current date and let the TTS engine say it
