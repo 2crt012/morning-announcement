@@ -3,8 +3,8 @@
 
 ### Features (current)
 * Announce your morning with TTS
+* Tell you a joke of an easy to understand category
 
 ### Features (planned)
 * Tell you some positive news
-* Tell you a random joke of a random category
 * Error handling with alternatives
