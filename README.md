@@ -5,7 +5,8 @@
 * Announce your morning with TTS
 * Tell the current date and time
 * Tell you a joke of an easy to understand category
+* Error handling with joke API issues by using one of 5 randomly slected jokes stored
 
 ### Features (planned)
 * Tell you some positive news
-* Error handling with alternatives
+* Full error handling
