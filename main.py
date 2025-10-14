@@ -33,5 +33,5 @@ def sayJoke():
 # settings (comment out to disable option)
 sayGM(0) # say good morning. 0 = random, 1 = good morning, 2 = rise and shine
 sayDate() # say the current date
-sayTime()
+sayTime() # say the current time
 sayJoke() # say a joke from the joke API
