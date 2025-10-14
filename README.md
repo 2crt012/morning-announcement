@@ -8,5 +8,4 @@
 * Error handling with joke API issues by using one of 5 randomly slected jokes stored
 
 ### Features (planned)
-* Tell you some positive news
 * Full error handling
