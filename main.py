@@ -15,8 +15,7 @@ def sayGM(phrase):
     tts.runAndWait()
 
 def sayDate(): # get the current date and let the TTS engine say it
-    cur_date = str(datetime.date.today())
-    cur_date = cur_date.replace("-", " and ")
+    cur_date = datetime.datetime.now().strftime("%A, %B %d")
     tts.say("Today's date is " + cur_date)
     tts.runAndWait()
 
