@@ -7,7 +7,7 @@ import requests
 # set up TTS
 tts = pyttsx3.init()
 
-def sayGM(phrase):
+def sayGM(phrase): # say good morning. 0 = random, 1 = good morning, 2 = rise and shine
     phrases = ["Good Morning, have a nice day!", "Rise and shine, it's a new day!"]
     if phrase == 0:
         phrase = random.choice(phrases)
@@ -24,7 +24,7 @@ def sayTime(): # get the current time and let the TTS engine say it
     tts.say("The current time is " + cur_time)
     tts.runAndWait()
 
-def sayJoke():
+def sayJoke(): # get a joke from the joke API and let the TTS engine say it
     tts.say("Here's today's joke for you!")
     tts.runAndWait()
     joke = requests.get("https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun,Spooky?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt&type=single")
