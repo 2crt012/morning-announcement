@@ -25,6 +25,8 @@ def sayTime(): # get the current time and let the TTS engine say it
     tts.runAndWait()
 
 def sayJoke():
+    tts.say("Here's today's joke for you!")
+    tts.runAndWait()
     joke = requests.get("https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun,Spooky?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt&type=single")
     joke_content = joke.text
     tts.say(joke_content)
