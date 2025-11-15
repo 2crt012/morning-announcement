@@ -25,6 +25,7 @@ def sayTime(): # get the current time and let the TTS engine say it
     tts.runAndWait()
 
 def sayJoke(): # get a joke from the joke API and let the TTS engine say it. if there is no response within one second, a local joke will be used instead
+    # add or remove local jokes in this array
     local_jokes = [
     "Two fish in a tank. One turns to the other and says, 'Do you know how to drive this thing?'",
     "I was going to tell a dead baby joke. But I decided to abort.",
